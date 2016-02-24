@@ -152,8 +152,52 @@ aside .socials a:hover {
 }
 
 /*===============================
+Footer
+================================*/
+#secondary-cta {
+  background: #eee;
+  padding: 30px 0;
+}
+#secondary-cta h4 {
+  font-weight: 200;
+  font-size: 24px; 
+  float: left;
+}
+#secondary-cta form{
+  margin: 0;
+  float: right; /*read floating by chris coyer*/
+}
+
+footer {
+  background: #444;
+  color: #fff;
+  padding: 50px 0;
+
+}
+
+footer #copyright {
+  width: 280px; /*for float purposes, can be longer*/
+  float: left;
+}
+
+footer nav {
+  float: right; /*widths of copyright and nav are now fixed*/
+  width: 340px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer nav a {
+    margin: 0 0 0 15px;/*being more specific*/
+}
+footer a:hover {
+  color: #0090bf;
+}
+/*===============================
 Navigation
 ================================*/
+
 nav ul{
   margin: 0;
   padding:0;
@@ -226,6 +270,9 @@ BUTTONS STYLES
   font-size: 24px;
   font-weight: 200px;
 }
+.btn-small {
+  font-weight: bold;
+}
 
 .btn-secondary, .btn-secondary:hover, .btn-secondary:active {
   background: none;
@@ -272,4 +319,16 @@ GLOBAL STYLES
 }
 .clearfix {
   zoom: 1;
+}
+
+input {
+  -webkit-font-smoothing: antialiased; /*makes styling sharper*/
+  text-rendering: optimizelegibility;
+}
+
+input[type="text"], input[type="email"] {
+  position: relative;
+  padding: 10px 10px 11px;
+  border: solid 1px #ccc;
+  margin: 0 -5px 0 0;
 }
