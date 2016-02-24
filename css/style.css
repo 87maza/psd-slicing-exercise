@@ -1,0 +1,275 @@
+/*
+
+COLORS
+--------
+
+black color="#000000"
+darker grey color="#222222"
+dark grey color="#333333"
+gray: #444444
+light-grey: #eeeeee;
+light blue: color="#00c0ff";
+dark blue: color="#0090bf";
+*/
+
+/*===============================
+GENERAL STYLES
+================================*/
+html{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+
+
+
+/*===============================
+TYPOGRAPHY
+================================*/
+h1, h2, h3{
+  font-weight: 300; /*bold or light-boldness*/
+  margin: 0;
+  line-height: 45px;
+}
+h4, h5, h6{
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+
+}
+h2{
+  font-size: 24px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h4{
+  font-style: 18px;
+  margin: 10px 0;
+}
+h5{
+  font-size: 13px;
+  margin: 0;
+  text-transform: uppercase;
+}
+p{
+  margin: 0 0 10px 0;
+}
+p.lead{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+
+/*===============================
+LAYOUT
+================================*/
+.container{
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto; /*auto makes sure imargin on left and right side of container is centered even with small broswers*/
+}
+header{
+  background: #000; 
+}
+#logo {
+  display: block; 
+  padding: 17px 0 16px 5px;
+  float: left;
+}
+
+#hero {
+  background: #00c0ff;
+  color: #000;
+}
+
+#hero-title {
+  width: 520px;
+  padding: 60px 0;
+  float: left;/*floats text to the left of the parent div*/
+}
+#hero-image {
+  float:right; /*floats computer to right*/
+  margin: 10px 0 -30px 0;/* negative space for computer*/
+}
+.lead-in {
+  margin: 30px;
+}
+#content {
+  padding: 100px 0;/*adding space between the blue div and whitetext*/
+}
+#column-content {
+  width: 700px; /*width of the column content*/
+  float: left;
+}
+
+/*===============================
+SIDE BAR
+================================*/
+aside {
+  background: #444;
+  width: 160px; /*was 220px, but had 60px of left and right padding*/
+  color: #fff;
+  float: left; /*read up on the float properties*/ 
+  margin-left: 20px;
+  padding: 30px; /*padding adds to the width of the parent element*/
+  font-size: 10px
+  line-height: 18px;
+}
+aside .widget{
+  /*selects any widget class in the aside tag*/
+  margin: 10px 0;
+}
+
+aside .widget:nth-child(2) {
+  /*selects any widget class in the aside tag specifically the 2nd widget in the aside tag*/
+  margin-top: 40px;
+}
+
+aside .widget h4 {
+/*descendant selector, any h4 tag that is a child of any widget*/
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+aside .socials a{
+  position: relative; /*need explanation*/
+  margin-right: 5px; /*space between each social media icon*/
+
+}
+aside .socials a:hover {
+  top: -1px;/*popup effect on hover*/
+
+}
+
+/*===============================
+Navigation
+================================*/
+nav ul{
+  margin: 0;
+  padding:0;
+  float: right; /*splits the logo from the li bullets, but it is not centered*/
+}
+
+nav ul li{
+  list-style: none;
+  float: left; /*bullets are now in one line use css tricks floats*/
+}
+
+header nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 20px;
+  border-left: solid 1px #333;
+}
+
+header nav ul li a:hover {
+  background: #222;
+}
+header nav ul li a:active {
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.8) inset;
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.8) inset;
+  box-shadow: 0 0 5px rgba(0,0,0,0.8) inset;
+}
+/*===============================
+BUTTONS STYLES
+================================*/
+.btn{
+  width: auto;
+  background:#0090bf;
+  border: 1px solid #1e728c;
+  color: #fff;
+  cursor: pointer;/*the hand thing on hover instead of the arrow cursor*/
+  display: inline-block;
+  /*NEEDS IE7 INLINE BLOCK HACK COMPATIBILITY*/
+  margin: 0;
+  outline: none;
+  padding: 10px 20px 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+/*fancy box shadow*/
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+/*css3 transitions*/
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+
+}
+.btn:hover {
+  color: #fff;
+  background-color: #0086b2;
+}
+.btn:active {
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2) inset;
+  color: #fff;
+}
+
+.btn-large {
+  padding: 22px 30px;
+  font-size: 24px;
+  font-weight: 200px;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active {
+  background: none;
+  border: none;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  text-decoration: underline;
+}
+.btn-secondary:active {
+  position: relative;
+  top: 1px;
+}
+#call-to-action {
+  margin: 40px 0;
+}
+
+
+
+/*===============================
+GLOBAL STYLES
+================================*/
+
+.column {
+  float: left; /*whole column div will float left*/
+  margin-right: 20px; /*add space between images*/
+}
+.four {
+  width: 220px; /*space of each column*/
+}
+.last {
+  margin-right: 0;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom: 1;
+}
