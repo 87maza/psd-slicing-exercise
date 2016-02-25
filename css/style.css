@@ -17,7 +17,7 @@ GENERAL STYLES
 ================================*/
 html{
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
+  text-rendering: optimizeLegibility;
 }
 
 body{
@@ -52,7 +52,7 @@ h3{
 }
 
 h4{
-  font-style: 18px;
+  font-size: 18px;
   margin: 10px 0;
 }
 h5{
@@ -122,7 +122,7 @@ aside {
   float: left; /*read up on the float properties*/ 
   margin-left: 20px;
   padding: 30px; /*padding adds to the width of the parent element*/
-  font-size: 10px
+  font-size: 10px;
   line-height: 18px;
 }
 aside .widget{
@@ -323,7 +323,7 @@ GLOBAL STYLES
 
 input {
   -webkit-font-smoothing: antialiased; /*makes styling sharper*/
-  text-rendering: optimizelegibility;
+  text-rendering: optimizeLegibility;
 }
 
 input[type="text"], input[type="email"] {
